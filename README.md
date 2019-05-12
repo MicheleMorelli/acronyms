@@ -1,8 +1,6 @@
 # Acronyms study kit #
-### By Michele Morelli ###
 
-
-I build this simple kit to help myself study Internet/Networking related acronyms.  
+Simple kit to help myself study Internet/Networking related acronyms.  
 <pre>
 .
 ├── acronyms_cheatsheet.pdf
@@ -16,15 +14,16 @@ I build this simple kit to help myself study Internet/Networking related acronym
 
 
 
-The kit includes 2 things :
+This repository includes:
 
-- A cheatsheet
-- A simple quiz program to practice the acronyms
+- A [cheatsheet](acronyms_cheatsheet.pdf)
+- A [simple quiz program](src/acronyms/acronyms_practice.py) to practice the acronyms
 
 
-To run the script:  
+To run the quiz:  
 ```bash
 python3 src/acronyms/acronyms_practice.py
 ```
+(requires Python 3.6)
 
 Enjoy!  
