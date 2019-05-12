@@ -1,0 +1,64 @@
+\documentclass{standalone}
+\usepackage{csvsimple}
+
+\begin{filecontents*}{acronyms.csv}
+acronym,meaning
+AJAX,Asynchronous Javascript and XML
+ARP,Address resolution protocol
+ARPA,Advanced Research Projects Agency
+ccTLD,country-code Top Level Domain
+CDATA,Character Data
+CGI,Common-gateway interface
+CIDR,Classless inter domain routing
+CML,Chemical Markup language
+CORS,Cross-origin Resource Sharing
+CRC,Cyclic redundancy checks
+CSMA/CD,Carrier sense multiple access/collision detector
+CSS,Cascading Style Sheets
+cXML,commerce XML
+DHCP,Dynamic Host configuration protocol
+DNS,Domain Name System
+DOM,Document Object Model
+DSL,Digital Subscriber Line
+DTD,Document Type Definition
+ebXML,electronic business XML
+FDM,frequency division multiplexing
+FTP,File transfer Protocol
+GENA,Generic event notification architecture
+gTLD,generic Top Level Domain
+HTML,Hyper Text Markup Language
+HTTP,Hypertext Transfer Protocol
+IANA,Internet Assigned Numbers authority
+ICMP,Internet Control Message Protocol
+IMAP4,Internet Mail Access Protocol
+IP,Internet Protocol
+IRI,Internationalised Resource Identifier
+ISN,Initial Sequence Number
+JSON,Javascript Object Notation
+JSP,Java Server Pages
+LAN,local area network
+MAC,Medium access
+MIME,Multi-purpose Internet Mail Extensions
+MTU,Maximum transmission unit
+NAT,network address translation
+PCDATA,parsed character data
+PHP,PHP: Hypertext Preprocessor
+POP3,Post Office Protocol version 3
+PPP,point to point protocol
+RAC,row and column
+RDF,Resource description framework
+REST,REpresentational State Transfer
+RFC,Request for Comments
+RSS,Really Simple Syndacation
+RTP,Real-time Transport protocol
+SDN,software defined networking
+\end{filecontents*}
+
+
+\begin{document}
+    \begin{tabular}{l|l}
+    \bfseries Acronym & \bfseries Meaning
+    \csvreader[head to column names]{acronyms.csv}{}
+    {\\\hline\acronym & \meaning}
+    \end{tabular}
+\end{document}
