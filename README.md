@@ -3,7 +3,7 @@
 Simple kit to help myself study Internet/Networking related acronyms.  
 <pre>
 .
-├── acronyms_cheatsheet.pdf
+├── acronyms_recap.pdf
 ├── latex_files
 ├── README.md
 └── src
@@ -16,7 +16,7 @@ Simple kit to help myself study Internet/Networking related acronyms.
 
 This repository includes:
 
-- A [cheatsheet](acronyms_cheatsheet.pdf)
+- A [cheatsheet](acronyms_recap.pdf)
 - A [simple quiz program](src/acronyms/acronyms_practice.py) to practice the acronyms
 
 
